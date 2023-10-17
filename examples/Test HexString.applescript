@@ -1,4 +1,4 @@
-property parent : script "com.lifepillar/ASUnit"
+property parent : script "eu.veryangryboss/ASUnit"
 global HexString
 property suite : makeTestSuite("Tests for HexString")
 

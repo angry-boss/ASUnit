@@ -13,13 +13,13 @@ using HeaderDoc.
 
 To get ASUnit, you may clone it from the GitHub repository:
 
-    git clone https://github.com/lifepillar/ASUnit.git
+    git clone https://github.com/angry-boss/ASUnit.git
 
-Alternatively, you may download a [tarball](https://github.com/lifepillar/ASUnit/releases)
+Alternatively, you may download a [tarball](https://github.com/angry-boss/ASUnit/releases)
 containing the source code.
 
 To build and install ASUnit, you have two options. If you have installed
-[ASMake](https://github.com/lifepillar/ASMake), you may just write:
+[ASMake](https://github.com/angry-boss/ASMake), you may just write:
 
     cd ASUnit
     ./asmake install
@@ -28,10 +28,10 @@ Otherwise, you can install it manually with the following commands:
 
     cd ASUnit
     osacompile -o ASUnit.scptd -x ASUnit.applescript
-    mkdir -p ~/Library/'Script Libraries'/com.lifepillar
-    mv ASUnit.scptd ~/Library/Script\ Libraries/com.lifepillar
+    mkdir -p ~/Library/'Script Libraries'/eu.veryangryboss
+    mv ASUnit.scptd ~/Library/Script\ Libraries/eu.veryangryboss
 
-In either case, the file `ASUnit.scptd` will be installed in `~/Library/Script Libraries/com.lifepillar`.
+In either case, the file `ASUnit.scptd` will be installed in `~/Library/Script Libraries/eu.veryangryboss`.
 
 **Note:** If you get an error like the following:
 
@@ -44,7 +44,7 @@ open the file with Script Editor, save it and try again.
 
 To use ASUnit with AppleScript 2.3 or later (OS X 10.9 or later), add
 
-    property parent : script "com.lifepillar/ASUnit"
+    property parent : script "eu.veryangryboss/ASUnit"
 
 at the top of your test script. For previous systems, use:
 

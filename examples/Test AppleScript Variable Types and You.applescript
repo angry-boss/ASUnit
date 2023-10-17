@@ -15,7 +15,7 @@
 ---------------------------------------------------------------------------------------
 property suitename : "AppleScript's Variable Types and You"
 ---------------------------------------------------------------------------------------
-property parent : script "com.lifepillar/ASUnit"
+property parent : script "eu.veryangryboss/ASUnit"
 property TopLevel : me
 property suite : makeTestSuite(suitename)
 

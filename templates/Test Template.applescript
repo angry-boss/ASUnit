@@ -12,11 +12,11 @@
 *)
 use AppleScript
 use scripting additions
-property parent : script "com.lifepillar/ASUnit"
+property parent : script "eu.veryangryboss/ASUnit"
 (* For OS X 10.8 and earlier, use this instead:
 property parent : load script Â
 	(((path to library folder from user domain) as text) Â
-		& "Script Libraries:com.lifepillar:ASUnit.scptd") as alias
+		& "Script Libraries:eu.veryangryboss:ASUnit.scptd") as alias
 *)
 ---------------------------------------------------------------------------------------
 property suitename : "The test suite description goes here"

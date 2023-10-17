@@ -6,7 +6,7 @@
 	@copyright 2013-2023 Lifepillar, 2006 Nir Soffer
 *)
 use scripting additions
-use ASUnit : script "com.lifepillar/ASUnit"
+use ASUnit : script "eu.veryangryboss/ASUnit"
 property parent : ASUnit
 property name : "Unit tests for ASUnit"
 property TestASUnit : me -- Needed to refer to top level entities from some tests
@@ -72,7 +72,7 @@ script |ASUnit name and bundle id|
 	
 	script |Bundle id|
 		property parent : UnitTest(me)
-		assertEqual("com.lifepillar.ASUnit", ASUnit's id)
+		assertEqual("eu.veryangryboss.ASUnit", ASUnit's id)
 	end script
 	
 end script
@@ -1270,14 +1270,14 @@ script |pretty print|
 		property ppScriptRef : a reference to ppScript
 		
 		script ppScript
-			property id : "com.lifepillar.ppscript"
+			property id : "eu.veryangryboss.ppscript"
 		end script
 		
 		assertEqual("«script pp script»", pp(me))
 		assertEqual("«script pp script»", pp(a reference to me))
 		assertEqual("«script pp script»", pp(a reference to (a reference to me)))
-		assertEqual("«script com.lifepillar.ppscript»", pp(ppScript))
-		assertEqual("a reference to «script com.lifepillar.ppscript»", pp(ppScriptRef))
+		assertEqual("«script eu.veryangryboss.ppscript»", pp(ppScript))
+		assertEqual("a reference to «script eu.veryangryboss.ppscript»", pp(ppScriptRef))
 	end script
 	
 	script |pp script called 'missing value'|

@@ -2,8 +2,8 @@
 	@header ASUnit
 		An AppleScript testing framework.
 	@abstract License: GNU GPL, see COPYING for details.
-	@author Nir Soffer, Lifepillar
-	@copyright 2013-2023 Lifepillar, 2006 Nir Soffer
+	@author Nir Soffer, Lifepillar, Veryangryboss
+	@copyright 2023 Veryangryboss 2013-2023 Lifepillar, 2006 Nir Soffer
 	@version 1.2.4
 	@charset utf-8
 *)
@@ -13,7 +13,7 @@ property name : "ASUnit"
 (*! @abstract <em>[text]</em> ASUnit's version. *)
 property version : "1.2.4"
 (*! @abstract <em>[text]</em> ASUnit's id. *)
-property id : "com.lifepillar.ASUnit"
+property id : "eu.veryangryboss.ASUnit"
 (*! @abstract Error number signalling a failed test. *)
 property TEST_FAILED : 1000
 (*! @abstract Error number signalling a skipped test. *)

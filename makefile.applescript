@@ -1,7 +1,7 @@
 #!/usr/bin/osascript
 use AppleScript version "2.4"
 use scripting additions
-use ASMake : script "com.lifepillar/ASMake" version "0.2.1"
+use ASMake : script "eu.veryangryboss/ASMake" version "0.2.1"
 property parent : ASMake
 property TopLevel : me
 
@@ -108,7 +108,7 @@ script install
 	property description : "Install ASUnit in" & space & dir
 	
 	tell BuildASUnit to exec:{}
-	set targetDir to joinPath(dir, "com.lifepillar")
+	set targetDir to joinPath(dir, "eu.veryangryboss")
 	set targetPath to joinPath(targetDir, "ASUnit.scptd")
 	if pathExists(targetPath) then
 		display alert Â
@@ -129,7 +129,7 @@ script BuildTests
 	property dir : POSIX path of Â
 		((path to library folder from user domain) as text) & "Script Libraries"
 	
-	set targetDir to joinPath(dir, "com.lifepillar")
+	set targetDir to joinPath(dir, "eu.veryangryboss")
 	set targetPath to joinPath(targetDir, "ASUnit.scptd")
 	if not pathExists(targetPath) then
 		owarn("Due to bugs in OS X Yosemite, building tests requires ASUnit to be installed.")
@@ -156,7 +156,7 @@ script uninstall
 		((path to library folder from user domain) as text) & "Script Libraries"
 	property description : "Remove ASUnit from" & space & dir
 	
-	set targetPath to joinPath(dir, "com.lifepillar/ASUnit.scptd")
+	set targetPath to joinPath(dir, "eu.veryangryboss/ASUnit.scptd")
 	if pathExists(targetPath) then
 		removeItem at targetPath
 	end if
